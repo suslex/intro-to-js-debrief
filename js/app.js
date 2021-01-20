@@ -19,3 +19,24 @@ if (typeof myNumber == 'number' && !reply) {
 
 console.log(reply);    //* If the value of `myNumber` is a multiple of both 3 and 5 (ex. 15) print GenBuzz to the console
    //* If the value of `myNumber` is any other number print the value of `myNumber` to the console.
+
+
+
+let itemName = 'SOcks';
+
+   switch (itemName.toLowerCase()) {
+    case 'shoes':
+    console.log(`Shoes are $50`);
+    break;
+    case 'jeans':
+    console.log(`Jeans are $25`);
+    break;
+    case 'hat':
+    console.log(`Hat is are $12`);
+    break;
+    case 'socks':
+    console.log(`Socks are $2`);
+    break;
+    default: console.log('Invalid Item');
+   }
+  
