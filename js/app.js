@@ -1,5 +1,5 @@
 let myNumber = 7;// Create variable `myNumber`
-if (typeof myNumber != 'number') {
+if (typeof myNumber !== 'number') {
     console.log('This is not a number');
    
 }   // If `myNumber` is not a number, print 'This is not a number' to the console.
@@ -13,8 +13,8 @@ if (myNumber%5 == 0) {    //* If value of `myNumber` is a multiple of 5 print 'B
     reply += "Buzz";
 }
 
-if (typeof myNumber == 'number' && !reply) {
-    reply = myNumber
+if (typeof myNumber == 'number' && !reply) { //in case our number is a number but reply is still empty (which means the number cant be divided)
+    reply = myNumber;
 }
 
 console.log(reply);    //* If the value of `myNumber` is a multiple of both 3 and 5 (ex. 15) print GenBuzz to the console
@@ -40,3 +40,8 @@ let itemName = 'SOcks';
     default: console.log('Invalid Item');
    }
   
+
+   //Print a random integer (whole number) between 50 and 100  to the console
+
+   let randInt = 50 + Math.floor((Math.random() * 51));
+   console.log(randInt);
